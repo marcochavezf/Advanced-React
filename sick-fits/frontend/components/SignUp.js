@@ -37,7 +37,6 @@ export default function SignUp() {
     // refectch the currently logged in user
     // refetchQueries: [{ query: CURRENT_USER_QUERY }],
   });
-  console.log({ data, error, loading });
   async function handleSubmit(e) {
     e.preventDefault(); // stop the form from submitting
     console.log(inputs);

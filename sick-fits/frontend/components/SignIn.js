@@ -42,9 +42,7 @@ export default function SignIn() {
   });
   async function handleSubmit(e) {
     e.preventDefault(); // stop the form from submitting
-    console.log(inputs);
-    const res = await signin();
-    console.log(res);
+    await signin();
     resetForm();
 
     const error = getError(data);
